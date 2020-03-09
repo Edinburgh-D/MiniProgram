@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/todoindex/todoindex",
+    
+    "pages/firstPage/firstPage",
+    "pages/calendarpage/calendarpage",
+
+    
+    
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/openapi/openapi",
+    "pages/openapi/serverapi/serverapi",
+    "pages/openapi/callback/callback",
+    "pages/openapi/cloudid/cloudid",
+    "pages/im/im",
+    "pages/im/room/room"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "飞跃",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "/images/selecticon/切换列.png",
+        "iconPath": "/images/icon/切换列.png",
+        "pagePath": "pages/calendarpage/calendarpage",
+        "text": "日历"
+      },
+      {
+        "selectedIconPath": "/images/selecticon/编辑备份.png",
+        "iconPath": "/images/icon/编辑备份.png",
+        "pagePath": "pages/todoindex/todoindex",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "/images/selecticon/文件备份 2.png",
+        "iconPath": "/images/icon/文件备份 2.png",
+        "pagePath": "pages/firstPage/firstPage",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

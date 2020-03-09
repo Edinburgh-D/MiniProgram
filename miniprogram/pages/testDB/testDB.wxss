@@ -1,0 +1,64 @@
+/* pages/testDB/testDB.wxss */
+.cantiner{
+  width:100%;
+  height:100%;
+  
+  
+}
+.background {
+  width: 100%;
+  height: 100%;
+  position:fixed; 
+  background-size:100% 100%;
+  z-index: -1;
+}
+.btView1{
+  border-width: medium;
+  
+  border-radius: 50%;
+}
+.checkbox{
+  border-radius: 50%;/* 圆角 */
+  width: 46rpx; /* 背景的宽 */
+  height: 46rpx; /* 背景的高 */
+}
+.checkview{
+  border: 10px;
+  width: 100%;
+  height: 80%;
+  color: #000
+}
+page{
+  width: 100%;
+  height: 100%;
+}
+.section1 {
+  display:inline-block;
+    margin-right:5px;
+    border-radius:100px; /* 圆形边缘弧度 */
+    width:100px; /* 宽度 */
+    height:100px; /* 高度 */
+}
+
+.cir{
+  display: inline-block;
+  margin-top: 20rpx;
+}
+ 
+.top{
+  text-align: center
+}
+.cc{
+  margin-top: -160px;
+  margin-left: 115px;
+}
+.btView{
+  position:fixed; 
+  bottom:0;
+  float: right;
+}
+.text0{
+  display: inline-box;
+  width:100%;
+  height:100%;
+}

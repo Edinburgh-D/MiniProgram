@@ -1,0 +1,52 @@
+<!--pages/testDB/testDB.wxml-->
+
+<cu-custom bgColor="bg-black" ><view slot="content">叮当清单</view></cu-custom>
+
+
+
+
+
+<view class="cantiner" >
+<image class="background" src="../../images/bgimg.jpg" mode="aspectFill"></image>
+
+  
+    <view class="flex solid-bottom padding align-start">
+        <view class="section1 bg-black padding-lg margin-xs radius">备忘录</view>
+            <view class="top ">
+                <canvas class="cir" style="width:262px; height:212px;" canvas-id="canvasArc">
+                      </canvas>
+                  <view class="cc  ">任务完成度:{{Score}}</view>
+            </view>
+        </view>
+
+
+        
+            <modal id="modal" hidden="{{hiddeninput}}" title="任务添加" confirm-text="提交" cancel-text="取消" bindconfirm="confirm" bindcancel="cancel" > 
+                <input type="text" placeholder='请输入内容' focus="{{focusVal}}"  bindinput="inputText" value="{{emptyInput}}"/>
+            </modal>
+            <view  class="btView1  padding bg-color-black float-right">
+                  <button class="cu-btn round lg bg-green " bindtap="addTask" >添加</button>
+            </view>
+            <!-- <view  class="btView2  padding bg-color-black float-right">
+                  <button class="cu-btn round lg bg-green " bindtap="queryTodos" >查询</button>
+            </view> -->
+            <!-- <view class="btView  padding bg-color-black float-right" wx:for="{{tododata}}"wx:key="key" >
+                  {{item.text}} +{{item.flag}}
+            </view> -->
+            <view class="checkview weui-cells weui-cells_after-title display-flex">
+              <checkbox-group bindchange="checkboxChange" > 
+              <view id="{{tododata.id}}" catchtap="itemBindTap" >
+                <label class="checkbox padding" style="display:flex;" wx:for="{{tododata}}" wx:key="tododata._id" catch:tap="catchtap">
+                <checkbox value="{{tododata.text}}" checked="{{tododata.flag}}"  id="toddata._id"/>{{item.text}}
+                  </label>
+              </view>
+                  
+              </checkbox-group>
+            </view>
+            
+   
+</view>
+
+
+
+    
